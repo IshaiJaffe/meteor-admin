@@ -53,3 +53,7 @@ Template.AdminDashboardView.helpers
 Template.adminEditBtn.helpers
 	path: ->
 		Router.path "adminDashboard" + Session.get('admin_collection_name') + "Edit", _id: @_id
+
+Template.adminDuplicateBtn.helpers
+	path: ->
+		Router.path "adminDashboard" + Session.get('admin_collection_name') + "Duplicate", _id: @_id

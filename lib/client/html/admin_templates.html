@@ -159,6 +159,11 @@
 	<a href="{{path}}" class="hidden-xs btn btn-xs btn-primary"><i class="fa fa-pencil"></i></a>
 	<a href="{{path}}" class="visible-xs btn btn-sm btn-primary"><i class="fa fa-pencil"></i> Edit</a>
 </template>
+<template name="adminDuplicateBtn">
+    <a href="{{path}}" class="hidden-xs btn btn-xs"><i class="fa fa-clone"></i></a>
+    <a href="{{path}}" class="visible-xs btn btn-sm"><i class="fa fa-clone"></i> Duplicate</a>
+</template>
+
 
 <template name="adminDeleteBtn">
 	<a data-toggle="modal" doc="{{_id}}" href='#admin-delete-modal' class="hidden-xs btn btn-xs btn-danger btn-delete"><i class="fa fa-times" doc="{{_id}}"></i></a>
